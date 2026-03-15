@@ -10,6 +10,7 @@
     --black: #242424;
     --frost: #c0c4cc;
     --cloud: #dcdfe6;
+    --green: #4bb543;
 }
 
 * {
@@ -446,3 +447,48 @@ nav {
         justify-content: center;
         z-index: -1;
 }
+
+.modal__overlay--loading {
+    background-color: var(--black);
+    font-size: 80px;
+}
+
+.modal__overlay--success {
+    background-color: var(--green);
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.75em;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 2.5em;
+    color: var(--white);
+    font-size: 2.25em;
+    z-index100;
+}
+
+/*
+    PROJECTS
+*/
