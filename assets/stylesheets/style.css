@@ -160,7 +160,7 @@ nav,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
-.dark-theme .fa-adjust,
+.dark-theme .fa-circle-half-stroke,
 .dark-theme .header__para {
     color: var(--white);
 }
