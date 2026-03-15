@@ -16,5 +16,5 @@ function moveBackground(event) {
 }
 
 function toggleContrast() {
-
+    document.body.classList.toggle('dark-mode');
 }
