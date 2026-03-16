@@ -25,13 +25,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 li {
     list-style-type: none;
+}
+p {
+    line-height: 1.5;
+    font-size: 1em;
 }
 
 a {
@@ -588,7 +587,7 @@ footer {
     max-width: 31.25em;
     display: flex;
     justify-content: space-around;
-    margin: 1.75px 0;
+    margin: 1.75em 0;
 }
 
 .footer__social--link,
