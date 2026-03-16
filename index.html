@@ -125,12 +125,37 @@
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new oportunities.'</h3>
                 <form action="" id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item"></div>
-                    <label for="" class="form__item--label">Name</label>
-                    <input type="text" name="user_name" type="text" class="input" required>
+                    <div class="form__item">
+                        <label for="" class="form__item--label">Name</label>
+                        <input type="text" name="user_name" class="input" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="" class="form__item--label">Email</label>
+                        <input type="text" class="input" name="user_email" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="" class="form__item--label">Message</label>
+                        <textarea name="message" class="input" type="text" required></textarea>
+                    </div>
+                    <button class="form__submit" id="contact__submit">Send it my way</button>
                 </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking  forward to speaking with you soon.
+                </div>
             </div>
         </div>
+        <img src="assets/images/semi circle.svg" alt="" class="shape--0">
+        <img src="assets/images/circle.svg" alt="" class="shape--1">
+        <img src="assets/images/squiggly.svg" alt="" class="shape--2">
+        <img src="assets/images/circle.svg" alt="" class="shape--3">
+        <img src="assets/images/triangle.svg" alt="" class="shape--4">
+        <img src="assets/images/circle.svg" alt="" class="shape--5">
+        <img src="assets/images/squiggly.svg" alt="" class="shape--6">
+        <img src="assets/images/circle.svg" alt="" class="shape--7">
+        <img src="assets/images/semi circle.svg" alt="" class="shape--8">
     </section>
     <div id="demo"></div>
 </body>
