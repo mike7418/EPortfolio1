@@ -596,6 +596,25 @@ footer {
     color: var(--white);
 }
 
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+    color: var(--white);
+}
+
+.footer__anchor {
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(3.75em);
+    opacity: 1;
+}
+
 /* 
 
   SHAPES
@@ -668,3 +687,4 @@ footer {
     top: 80vh;
     left: 80vw;
 }
+
