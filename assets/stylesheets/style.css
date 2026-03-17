@@ -28,10 +28,6 @@ html {
 li {
     list-style-type: none;
 }
-p {
-    line-height: 1.5;
-    font-size: 1em;
-}
 
 a {
     text-decoration: none;
@@ -245,8 +241,15 @@ nav,
     box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
 }
 
+.scroll {
+    position: absolute;
+    bottom: 1.25em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .scroll__icon {
-    width: 20px;
+    width: 1.25em;
     height: 30px;
     border: 2px solid var(--black);
     border-radius: 24px;
@@ -285,7 +288,7 @@ nav {
     width: 100%;
     max-width: 75em;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
     height: 6.25em;
 }
 
@@ -307,6 +310,10 @@ nav {
     font-size: 1em;
     color: var(--black);
     font-weight: 700;
+}
+
+.fa-adjust {
+    font-size: 1.25em;
 }
 
 /*
@@ -331,7 +338,7 @@ nav {
 
 .modal--open .modal {
     z-index: 60;
-    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    box-shadow: 0 1.25em 5em 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
 }
 
@@ -374,7 +381,7 @@ nav {
     transform: scale(1);
 }
 
-.modal__language {
+.modal__language:hover {
     filter: brightness(80%);
     transform: scale(0.9);
 }
@@ -411,7 +418,7 @@ nav {
 }
 
 .form__item {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
 }
 
 .form__submit {
@@ -450,7 +457,7 @@ nav {
 
 .modal__overlay--loading {
     background-color: var(--black);
-    font-size: 80px;
+    font-size: 5em;
 }
 
 .modal__overlay--success {
@@ -486,7 +493,7 @@ nav {
     right: 2.5em;
     color: var(--white);
     font-size: 2.25em;
-    z-index100;
+    z-index: 100;
 }
 
 /*
@@ -516,9 +523,19 @@ nav {
 }
 
 .project__wrapper:hover .project__description {
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+.project__wrapper:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.project__description {
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 90px;
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
@@ -540,15 +557,15 @@ nav {
     background-color: var(--blacker);
     opacity: 0;
     transition: all 450ms ease;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .project__description--title {
     font-size: 2.5em;
 }
 
-.project__description--title {
-    font-size: 8px;
+.project__description--sub-title {
+    margin-top: 8px;
 }
 
 .project__description--link {
@@ -587,7 +604,7 @@ footer {
     max-width: 31.25em;
     display: flex;
     justify-content: space-around;
-    margin: 1.75em 0;
+    margin: 1.75px 0;
 }
 
 .footer__social--link,
@@ -667,7 +684,7 @@ footer {
     left: 50vw;
 }
 
-.shape--5 {
+.shap--5 {
     top: 50vh;
     left: 80vw;
 }
@@ -686,7 +703,6 @@ footer {
     top: 80vh;
     left: 80vw;
 }
-
 
 /*
     Small phones, tablets, large smart phones
