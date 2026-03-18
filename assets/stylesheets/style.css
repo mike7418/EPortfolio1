@@ -504,7 +504,7 @@ nav {
     text-align: center;
     font-size: 3em;
     margin-bottom: 1em;
-    margin-top: 13em;
+    margin-top: 3em;
 }
 
 .project {
@@ -711,6 +711,11 @@ footer {
 */
 
 @media (max-width: 768px) {
+
+    .section__title {
+        margin-top: 1em;
+    }
+
     #projects {
         top: 0;
     }
