@@ -288,8 +288,8 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.25em;
-    height: 6.25em;
+    padding: 0 20px;
+    height: 100px;
 }
 
 #personal-logo {
