@@ -711,6 +711,9 @@ footer {
 */
 
 @media (max-width: 768px) {
+    #projects {
+        top: 0;
+    }
 
     .title {
         font-size: 5em;
