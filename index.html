@@ -13,7 +13,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
     <script src="assets/javascripts/index.js" defer></script>
     <title>David Bragg</title>
-
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_K1PoFs8pB2YVWStDxrUls");
+        })();
+    </script>
 </head>
 <body>
     <!-- Naigation bar -->
@@ -23,14 +27,14 @@
                 <img src="assets/images/logo.svg" alt="" id="personal-logo">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link" onclick="toggleModal()">
+                <li class="nav__link"">
                     <a href="#" class="
                  nav__link--anchor
                  link__hover-effect
                  link__hover-effect--black
                  ">About</a>
                 </li>
-                <li class="nav__link" onclick="toggleModal()">
+                <li class="nav__link">
                     <a href="#" class="
                  nav__link--anchor
                  link__hover-effect
@@ -122,7 +126,7 @@
                         <span class="language__name">Vue</span>
                     </figure>
                     <figure class="modal__language">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="" class="modal--language--img">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="" class="modal__language--img">
                         <span class="language__name">Nuxt</span>
                     </figure>
                 </div>
@@ -173,7 +177,7 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="assets/images/google mockup.png" alt="" class="project__image">
+                            <img src="assets/images/google mockup.png" alt="" class="project__img">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">

@@ -19,7 +19,15 @@ function moveBackground(event) {
 
 
 function toggleContrast() {
-    document.body.classList.toggle('dark-mode');
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+
+   // document.body.classList.toggle('.dark-mode');
 }
 
 function contact(event) {

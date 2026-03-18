@@ -322,9 +322,9 @@ nav {
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%l -50%);
+    top: 6%;
+    left: 16%;
+    transform: translate(-50% -50%);
     width: 90%;
     max-width: 68.75em;
     height: 43.75em;
@@ -503,11 +503,12 @@ nav {
 .section__title {
     text-align: center;
     font-size: 3em;
-    margin-bottom: 3.75em;
+    margin-bottom: 1em;
+    margin-top: 13em;
 }
 
 .project {
-    margin-bottom: 16em;
+    margin-bottom: 8em;
 }
 
 .project__img {
@@ -524,7 +525,7 @@ nav {
 
 .project__wrapper:hover .project__description {
     opacity: 1;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
 }
 
 .project__wrapper:hover .project__img {
@@ -610,6 +611,7 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color: var(--white);
+    line-height: 3em;
 }
 
 .footer__logo--popper {
@@ -684,7 +686,7 @@ footer {
     left: 50vw;
 }
 
-.shap--5 {
+.shape--5 {
     top: 50vh;
     left: 80vw;
 }
